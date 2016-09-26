@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="includes/css/style.css" rel="stylesheet"/>
+<script src="includes/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+    if($(this).scrollTop() != 200) {
+        $('.gotop').fadeIn();
+    } else {
+        $('.gotop').fadeOut();
+    }
+    if ($(this).scrollTop() > 100) {
+        $('#left').addClass("menuontop");
+    }else {
+        $('#left').removeClass('menuontop');
+    }
+});
+
+$('.gotop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<title>Document for Fashion Responsive Theme</title>
+<style type="text/css">
+<!--
+.style3 {
+	font-size: 16px;
+	font-style: italic;
+}
+.menuontop {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+img {
+    max-width: 890px;
+    height: auto;
+}
+-->
+</style>
+</head>
+<body>
+<div id="top">
+	<a name="top"></a>
+	<h1 style="text-align:center">Kuteshop - Multipurpose WooCommerce Wordpress Theme</h1>
+	<h4 style="text-align:right">Installation and Quick Start Guide&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; Thank you for your purchasing</h4>
+</div>
+<div class="wp" id="getting-started">
+	<div id="left">
+      <ul>
+        <li><strong><a href="#getting-started">Getting  Started</a></strong></li>
+        <li><strong><a href="#installation">Installation</a></strong></li>
+      </ul>
+      <ol>
+        <li><a href="#autoinstall">Automatic Installation</a></li>
+        <li><a href="#installplugin">Install Needed Plugins</a></li>
+        <li><a href="#importsampledata">Importing Sample Data</a></li>
+      </ol>
+      <ul>
+        <li><strong><a href="#afterinstallation">After  Installation</a></strong></li>
+      </ul>
+      <ol>
+        <li><a href="#addinglogo">Adding Logo and Favicon</a></li>
+        <li><a href="#Headingsetting"> Header setting</a></li>
+        <li><a href="#megamenu">Creating Advance Top menu.</a></li>
+        <li><a href="#FooterSettings">Footer Settings</a></li>
+        <li><a href="#footerwidgets">Footer Widget</a></li>
+        <li><a href="#woocommerce">Woocommerce Setting</a></li>
+        <li><a href="#verticalmenu">Creating Vertical menu</a></li>
+        <li><a href="#topbarmenu">Topbar Menu</a></li>
+        <li><a href="#themecolor">Theme Color</a></li>
+      </ol>
+      <p><strong><a href="#shortcodes">Kute Shortcodes</a></strong></p>
+      <p><a href="#service"> 1. Service</a></p>
+      <p><a href="#tabproduct">2. Tab Products</a></p>
+      <p><a href="#latestdeal">3. Latest Deal</a></p>
+      <p><a href="#latestproductcarousel">4. Latest Products Carousel</a></p>
+      <p><a href="#popularcategory">5. Popular Category</a></p>
+      <p><a href="#categoriestab">6. Categories Tab</a></p>
+      <p><a href="#categories">7. Categories</a></p>
+      <p><a href="#listproduct">8. List Products</a></p>
+      <p><a href="#mailchimp">9. Mailchimp</a></p>
+      <p><a href="#brand">10. Brand</a></p>
+      <p><a href="#blog">11. Blog</a></p>
+      <p><a href="#kutefeaturedproduct">12. KT Featured Product</a></p>
+      <p><a href="#hotdealstab">13. Hot Deals Tab</a></p>
+      <p><a href="#boxproduct">14. Box Product</a></p>
+      <p><a href="#hotdeals">15. Hot Deals</a></p>
+      <p><a href="#ktlookbook">16. KT Look Books</a></p>
+      <p><a href="#ktcollection">17. KT Collection</a></p>
+      <p><a href="#kttestimonials">18. KT Testimonials</a></p>
+      <p><a href="#ktbannertext">19. KT Banner Text</a></p>
+      <p><a href="#ktbanner">20. KT Banner</a></p>
+      <p><a href="#categoriescarousel">21<strong>. </strong>Categories Carousel</a></p>
+      <p><a href="#productsidebar">22. Product Sidebar</a></p>
+      <p><a href="#KTsingleproduct">23. KT Single Product</a></p>
+<p><strong><a href="#kutewidgets">Kute Widgets</a></strong>      </p>
+      <p><strong><a href="#thanks"></a></strong><strong><a href="#whmcs"></a></strong><strong><a href="http://kutethemes.com/help/faq/faq-kuteshop-wp/" target="_blank">Frequently  Asked Questions</a></strong></p>
+      <p><strong><a href="#thanks">Thank you!</a></strong></p>
+      <p>&nbsp;</p>
+  </div>
+  <div id="content">
+<p><strong>Getting Started    </strong>	  </p>
+<p>To install the Kute theme. You need to have a version of <strong>Wordpress</strong>. You can download from here: <a href="http://wordpress.org/">the download URL</a>. , make sure that you had all needed Wordpress setting. You can install this theme following the way below:</p>
+<h2 id="installation">Installation</h2>
+<h3 id="autoinstall">1. Automatic Installation</h3>
+    <blockquote>
+      <p><strong><em>Step 1.</em></strong> Download ZIP package from Themeforest and then unzip it.</p>
+      <p><strong><em>Step 2.</em></strong> In unzipped folder you will find a folder named &quot;<strong>Theme-kuteshop</strong>&quot; and 2 archives: &quot;<strong>Kutetheme.zip</strong>&quot; file and &quot;<strong>Sample Data</strong>&quot;</p>
+      <p><strong><em>Step 3.</em></strong> In your Wordpress Dashboard, navigate to <strong>Appearance &gt; Themes</strong>.</p>
+      <p><img src="includes/imgs/install_1.png" width="508" height="295"  alt=""/></p>
+      <p><strong><em>Step 4.</em></strong> Click on <strong>Add New</strong>, then clicking on <strong>Upload Theme</strong> and browse the <strong>Kutetheme.zip</strong> file, finally click <strong>Install Now</strong>.      </p>
+      <p><img src="includes/imgs/install2.png" width="875" height="279" /></p>
+      <p><strong><em>Step 5</em></strong>. Wait for a while untill the screenshot below appears, on this form clicking on  <strong>Activate </strong>link  to active Kute Theme. Theme has been installed and actived or you also click <strong>Live Preview</strong> to view this theme.</p>
+      <p><img src="includes/imgs/install3.png" /></p>
+      <p>&nbsp;</p>
+    </blockquote>
+    <h3 id="installplugin">2. Install Needed Plugins:</h3>
+    <p>Kute theme recommended you use the following plugins:</p>
+    <ul>
+      <li><strong>Visual Composer </strong>- Visual Composer for WordPress is drag and drop frontend and backend page builder plugin that will save you tons of  working time on the site content. You will be able to take full control over your WordPress site, build any layout you can imagine – <strong>no programming knowledge required</strong>. Moreover, now you can choose either work on a backend or move your page building process to frontend and instantly you can see the changes you made.</li>
+      <li><strong>Revolution Slider </strong>- is a premium plugin( <a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Official Page</a> ) which lets you create stunning full-width, full-screen, normal sliders, all responsive  with nice effects.</li>
+      <li><strong>Contact Form 7</strong> - Just another contact form plugin. Simple but flexible.</li>
+      <li><strong>Kutetheme toolkit</strong> - A Toolkit for Kute theme, consist of post types, mailchimp....</li>
+      <li><strong>WooCommerce</strong> - An e-commerce toolkit that helps you sell anything that you want.</li>
+      <li><strong>WooCommerce Variation Swatches and Photos</strong> - allows you to configure colors and photos for shoppers on your site to use when picking variations. Notice that you need to purchase this plugin to use for your site, you can follow the link: http://codecanyon.net/item/woocommerce-color-or-image-variation-swatches/7444039 to buy the plugin <strong>WooCommerce Variation Swatches and Photos</strong>.</li>
+      <li><strong>YITH Woocommerce Ajax Prduct Filter</strong> - Help you filter the product list without reloading the page</li>
+      <li><strong>YITH Woocommerce Compare</strong> -  allows you to compare more products with woocommerce plugin, through product attributes.</li>
+      <li><strong>YITH WooCommerce Wishlist</strong> - help you to add Wishlist functionality to your e-commerce.</li>
+    </ul>
+    <p>After installed Kute theme you will be noticed to install required plugins, just follow the instruction you will get all settings.</p>
+    <blockquote>
+      <p><img src="includes/imgs/install4.png" width="900" /></p>
+      <p><img src="includes/imgs/install5.png" height="650" /></p>
+      <p>The installation process may take few minutes, so please be patience.  All plugins have been Installed and activated successfully in one -click.   </p>
+      <p>Follow next steps if you want to install sample data like our demo website.</p>
+</blockquote>
+    <h3 id="importsampledata">3. Importing Sample Data.</h3>
+    <p><strong>Notice that:</strong> Before you import our Sample Data, you need to set up the image size of your product as you want.</p>
+    <p> You may go to<strong> Dashboard=&gt; Woocommerce=&gt; Settings=&gt; Product=&gt; Display</strong>, scrolling down to the<strong> Product image</strong> and setting the size suitable with your site.</p>
+    <p>Remember to save your setting.</p>
+    <p><img src="includes/imgs/I1.png" width="900" height="369" /></p>
+    <p>      If you arw using the theme to build a new website which doesn`t have content yet, I strongly recommend you to use the demo content files. This theme includes xml data files which will allow you to upload the demo content to your website. The content is the same as in the Live Demo Preview.</p>
+    <p><strong>3.1 Import Demo content</strong>.<br />
+    </p>
+<blockquote>
+      <p><strong><em>Step 1:</em></strong> Go to <strong>Dashboard &gt;&gt;Tools &gt;&gt; Import</strong></p>
+      <p><em><strong>Step 2:</strong></em> Click on <strong>Wordpress </strong>to Importer:</p>
+      <p><img src="includes/imgs/import1.png" width="595" height="407" /></p>
+      <p><strong><em>Step 3:</em></strong> Install plugin WordPress Importer</p>
+<p><img src="includes/imgs/import2.png" width="749" height="514"  alt=""/></p>
+      <p><img src="includes/imgs/import3.png" width="776" height="184" /></p>
+      <p><em><strong>Step 4:</strong></em> Click on <strong>Choose File</strong> button and browse to the folder that you save the file. Find the <em><strong>filename.xml</strong></em> file  then click <strong>Upload file and import</strong> button:</p>
+      <p><img src="includes/imgs/import4.png" width="900" height="196" /></p>
+      <p><strong><em>Step 5:</em></strong> Check <strong>Download and import file attachments</strong> checkbox and select user for post's author before submit to starts import sample data:</p>
+      <p><img src="includes/imgs/import5.png" /></p>
+<p>Wait for the importer working until this pop up appear that meant your import completed.</p>
+<p><img src="includes/imgs/import6.png" width="454" height="101" /></p>
+<p>&nbsp;</p>
+</blockquote>
+<p><strong>3.2 Import Layer Slider data.</strong></p>
+<blockquote>
+  <p><strong><em>Step1</em></strong>: Go to <strong>Dashboard=&gt;Revolution Slider</strong></p>
+  <p><img src="includes/imgs/import7.png" width="452" height="185" /></p>
+  <p><strong><em>Step 2</em></strong>: Import sliders</p>
+  <p><img src="includes/imgs/import8.png" width="900" height="238" /></p>
+  <p>The Import Slider popup will appears, click <strong>Choose File</strong> button then browse to ... <strong>&quot;slider1.zip&quot;</strong> in the <strong>Sample Data </strong> folder and click <strong>Import</strong> button:</p>
+  <p><img src="includes/imgs/import9.png" width="601" height="352" /></p>
+  <p>The  slider 1 have imported successfully.</p>
+  <p><img src="includes/imgs/import10.png" width="900" height="179" /></p>
+  <p>Manipulate  the similar steps to import the others slider.</p>
+  <p><strong>3.3. Import Widget</strong>: You  can follow these steps below:</p>
+<p><strong><em>Step 1</em></strong>: Go to <strong>Dashboard &gt;&gt; Plugin &gt;&gt; Add New</strong></p>
+  <p><strong><em>Step 2:</em></strong> Fill in the keyword: <strong><em>&ldquo;widget importer  &amp; exporter&rdquo;</em></strong>  to the search box.</p>
+  <p><strong><em>Step 3: </em></strong>Click on the<strong> &ldquo;Install Now&rdquo;</strong> button to install the Widget  importer &amp; exporter plugin .</p>
+<p><img src="includes/imgs/import and expoort.png" alt="import and export" width="900" height="387" /></p>
+  <p><strong><em>Step 4: </em></strong>Activate this Plugin:</p>
+  <p><img src="includes/imgs/Active plugin.png" alt="active" width="900" height="357" /></p>
+  <p><strong><em>Step 5: </em></strong>: Go to <strong>Tool =&gt; Widget Importer &amp; Exporter</strong> and  choose the <em>filename.wie</em> to import the  widget:</p>
+<p><img src="includes/imgs/view import and export.png" alt="view import and export" width="900" height="381" /></p>
+<p><strong>3.4 Setting Homepage and Blog page</strong></p>
+  <blockquote>
+    <p>- From <strong>Dashboard &gt;&gt; Settings &gt;&gt; Reading</strong></p>
+    <p><img src="includes/imgs/menuset5.png" width="451" height="232" /></p>
+    <p>- It will takes you to the Reading Settings page, from this page you should care about some of the following selections: </p>
+    <p><img src="includes/imgs/menuset6.png" width="803" height="585" /></p>
+    <p>In the &quot;<strong>Front page displays</strong>&quot; section, check on the button list &quot;<strong>A static page</strong>&quot;<strong>[1]</strong>, then select <strong>Front page [2]</strong> and <strong>Post page[3]</strong> like the screenshot above if you want the front page display as our demo or  you can also make your own front page displays.</p>
+    <p> Finally click on <strong>&quot;Save Changes&quot; </strong>button to save your settings.</p>
+  </blockquote>
+  <blockquote>
+    <p></p>
+  </blockquote>
+</blockquote>
+<p><strong>4.  Menu Setting.</strong></p>
+<blockquote>
+      <p> You have to go to <strong>Dashboard &gt;&gt;Appearance &gt;&gt;Menus </strong>to set menu like our demo menu.</p>
+      <p><img src="includes/imgs/menuset1.png" width="315" height="202" /></p>
+      <p>Select Manage Location tab to set theme Location and Assigned Menu:</p>
+      <p><img src="includes/imgs/menuset2.png" width="665" height="282" /></p>
+      <p>Notice that you have to create a menu then you can select which menu will appear in each location. For example: make main menu like our demo, you following some steps as the screenshot below:      </p>
+      <p><img src="includes/imgs/menuset3.png" width="900" /></p>
+      <p>Scrolling down to the section <strong>&quot;Menu Settings&quot;</strong> to assign the menu to the <strong>&quot;Primary Menu&quot;</strong> location. Finally click on <strong>&quot;Save&quot;</strong> button to save the setting.</p>
+<p><img src="includes/imgs/menuset4.png" width="761" height="214" /></p>
+      <p><strong>[1]: </strong>Select a menu to edit</p>
+      <p><strong>[2]: </strong>Select main menu to edit structure.</p>
+<p><strong>[3]: </strong>Name of menu: you can set the name for the menu you want to create<strong>.</strong></p>
+      <p><strong>[4]: </strong>Theme locations: set the position of menu (Primary Menu)</p>
+      <p><strong>[5]: </strong>Click <strong>Save Menu</strong> to save the setting.</p>
+      <p><strong>[6]:</strong> Click<strong> Delete</strong> button to delete menu if you don't want it to display on your homepage.</p>
+</blockquote>
+    <p>&nbsp;</p>
+    <blockquote>
+<p><strong>After  Installation</strong><strong></strong><strong><a name="afterinstallation" id="afterinstallation"></a></strong></p></blockquote>
+<h3 id="addinglogo"><strong>1</strong>. <strong>Adding Logo and Favicon</strong></h3>
+    <blockquote>
+      <p>Go to <strong>Dashboard &gt;Theme Options</strong></p>
+      <p>It will take you to the<strong> Theme options</strong> page. In this page, you can setting  attributes for your site and it depends on your intention.</p>
+      <p>The first important thing when you go to Theme option setting, you should care about the <strong>General tab</strong> setting to set the attribute for your page, you need to complete the form below: </p>
+      <p><img src="includes/imgs/Themeoption1.png" width="664" height="403" /></p>
+      <p>From the image above, you can select the page you want to show on your site like the Service page, Support page and page About us.    </p>
+      <p>Secondly, go to<strong> </strong>&quot;<strong>Logo</strong>&quot; tab, you will see 3 main parts:<strong> Logo [1]</strong>,<strong> Logo Footer [2]</strong> and <strong>Favicon</strong> <strong>[3]</strong></p>
+      <p><img src="includes/imgs/logo1.png" width="900" height="446" /></p>
+      <p>- You can upload your site's <strong>Logo [1]</strong>,<strong> Logo in Footer [2] and Favicon [3] </strong>as you want. Do not forget click on the &quot;<strong>Save</strong>&quot;<strong> </strong>button to save   information.</p>
+<p>-  Logo on your site after uploading:</p>
+      <p><img src="includes/imgs/logo3.png" width="900" height="128" /></p>
+      <p>&nbsp;</p>
+    </blockquote>
+    <h3 id="Headingsetting">2. Header setting</h3>
+    <p><strong>2.1. Select the Header</strong></p>
+    <p>Go to <strong>Dashboard &gt;Theme Options</strong></p>
+    <p>- In Theme Options Settings, go to <strong>Header </strong><strong>tab</strong> and choose the Header option that you want to display on your Homepage.</p>
+    <p><img src="includes/imgs/Header1.png" width="900" height="511" /></p>
+<p>For above form: </p>
+    <ul>
+      <li>Header : Click on any header layout that you would like to apply for your theme.</li>
+      <li>Then click on <strong>&quot;Save&quot;</strong> to save the setting.</li>
+    </ul>
+    <p><strong>2.2. My Account box</strong></p>
+<p>In our theme, you can use the default My Account box on the Header or you can disable it then setting as you want.</p>
+<p>To configure this box, you can go to <strong>Dashboard/ Theme option/ Header/ Enable hook</strong>, click on the arrow down on the right side of My Account box as the image below:</p>
+<p><img src="includes/imgs/Myaccount.png" width="900" height="231" /></p>
+<p>You can also set the specific attribute for the Header such as: Ads text for Header style 3 or Setting category service in header 7.......... by click on the that Header then complete the needed information.</p>
+<p>&nbsp;</p>
+<h3 id="megamenu">3. Creating Advance Menu.</h3>
+	<p>This section will guide you how to create the menu like our demo in mega menu format. Mega menu supports for creating two main components are<strong> Main menu (level 1)</strong> and <strong>Submenu (level2)</strong>. After installing Kute theme, the <em>demo data</em> for menu will be automatically  installed. You can see the style of the   top menu in the front-end demo. But you  need to change the image and   the links suitable your shop site.</p>
+	<p>These images below are the detail instructions for using this section:</p>
+	<p><img src="includes/imgs/advance1.png" width="900" /></p>
+	<p><strong>Main menu (level 1)</strong> consists of multi-items, each item has or hasn't  a<strong> Submenu (level 2)</strong>. In the Installed demo menu, there are 8 items in <strong>Main menu (level 1)</strong>: <em>Home, Fashion, Foods, Sports, Digital, Furniture, Jewelry, Blog</em>. As the above screenshot, <strong>Submenu (level 2)</strong> of item <em>Fashion</em> is shown.</p>
+<p>If you would like to manage the menu. You can do following these steps:	</p>
+	<p><strong>3.1 How to create Main menu (level 1)?</strong></p>
+	<blockquote>
+	  <p>Go to <strong>Dashboard=&gt; Appearance =&gt; Menus</strong></p>
+	  <p><img src="includes/imgs/advance2.png" width="335" height="215" /></p>
+	  <p>- Click on <strong>&quot;Create a new menu&quot;</strong> button.</p>
+<p><img src="includes/imgs/advance3.png" width="772" height="144" /></p>
+	  <p>- Give your menu a name<strong>[2]</strong>, then click &quot;<strong>Create Menu</strong>&quot; button.</p>
+	  <p><img src="includes/imgs/advance4.png" width="806" height="156" /></p>
+	  <p>- Set location for this menu as <strong>Main menu [3]</strong>.(or Primary menu)</p>
+	  <p><img src="includes/imgs/advance5.png" width="754" height="151" /></p>
+	  <p>Then, click<strong> Save Menu</strong> to save the setting. Main menu has been created, We continuously add items for the Main menu and you can see our Main menu structure.</p>
+	  <p><img src="includes/imgs/advance6.png" width="757" height="796" /></p>
+    </blockquote>
+	<p><strong>3.2  How can I create my own sub-menu (level 2) for item in the main menu (Menu level1)?</strong></p>
+<p><strong>Example</strong>: Create a sub-menu for the item: <strong>&quot;Fashion&quot;</strong> in the main-menu such as the screenshot below:</p>
+    <p><img src="includes/imgs/advance1.png" width="900" height="414" /></p>
+    <p>- First, you have to click on the arrow down on the right of Fashion item to edit, then you choose <strong>&quot;Enable Mega Menu&quot;</strong> and select the menu page (post type mega menu).</p>
+    <p><img src="includes/imgs/advance7.png" width="498" height="408" /></p>
+    <p><strong> How to create a post type mega menu?</strong></p>
+    <p>  Go to <strong>Dashboard=&gt; Mega menu=&gt; Addnew</strong> to create a new Mega menu (such as Fashion) and you can build it as you want by Visual composer.</p>
+    <p><img src="includes/imgs/VC.png" width="900" height="260" /></p>
+    <p>You can see our demo post type mega menu structure:</p>
+    <p><img src="includes/imgs/Mega item.png" width="900" height="478" /></p>
+    <p>In our demo, we used 2 shortcodes: Single Image and WP Custom Menu, you can change the image and the menu as you want then save and update it.</p>
+    <p><strong id="FooterSettings"> 4. Footer Settings</strong></p>
+    <p>To set the Copyrights look like our demo:</p>
+    <p><img src="includes/imgs/footerset1.png" alt="" /></p>
+<p>You need going to <strong>Dashboard =&gt;Theme options</strong></p>
+    <p>- It will take you to the Theme Option Setting =<strong>&gt;Footer</strong> <strong>tab</strong> and you can configure settings for the footer tab and it will appear on your site's footer.</p>
+    <p><img src="includes/imgs/Footer.png" width="888" height="490" /></p>
+    <p>In this tab, we give you 3 type of Footer and you can also select the Footer display on your site as you want.</p>
+    <blockquote>
+      <p> <strong>How to create the contact on your footer such as: address, phone or email....?</strong></p>
+      <p><img src="includes/imgs/footerset3.png" width="340" height="222" /></p>
+      <p>You just need go to<strong> Dashboard=&gt; Theme options=&gt; Infor</strong> and complete all the needed information then Click <strong>Save</strong> button to save the setting.</p>
+      <p><img src="includes/imgs/footerset4.png" /></p>
+      <p><strong id="footerwidgets">5. Footer Widgets</strong></p>
+    </blockquote>
+<p>You can use both default widgets and Kute widgets to build your own footer contents.</p>
+    <p>To manage Footer widgets, go to <strong>Appearance &gt;&gt; Widgets</strong></p>
+    <p>You only need to drag and drop the widget  or click on it then add to the footer you want to show.</p>
+    <p><img src="includes/imgs/footerset5.png" width="631" height="623" /></p>
+    <p>There are 7 footer sidebars: Footer Menu1, Footer Menu 2, Footer Menu 3, Footer social, Footer Payment, Footer Bottom, Footer Menu Bottom. You now only drag some widgets to these sidebars, to do it looks like our demo footer, please see following screenshots.</p>
+    <p><img src="includes/imgs/footerset6.png" /></p>
+<p>From the image above, we used some widgets:</p>
+    <p><strong><em>5.1 Footer column1: </em></strong>We use one widgets for Footer column1: <strong>&quot;Custom Menu&quot;</strong></p>
+<p><strong><em>5.2 Footer column2:</em></strong> using widget &quot;<strong>Custom Menu</strong>&quot;</p>
+<p><strong><em>5.3 Footer column3: </em></strong>using &quot;<strong>Custom Menu&quot;</strong> widget</p>
+<p><strong><em>5.4 Footer Social (column4): </em></strong>using &quot;<strong>KT Mailchimp</strong>&quot; and <em><strong>&quot;KT Social </strong></em>&quot; widget</p>
+<p><strong><em>5.5 Footer Payment (column5): </em></strong>using &quot;<strong>KT Trademark Payment</strong>&quot; widget</p>
+    <p><strong><em>5.6 Footer Bottom (column6): </em></strong>using &quot;<strong>KT SEO Keyword</strong>&quot; widget    </p>
+    <p><strong><em>5.7 Footer Menu Bottom (column7)</em></strong>: we use the &quot;<em><strong> Custom Menu</strong></em>&quot; widget.</p>
+    <p>We will give you an instruction for using Custom menu widget (Column 1) and you need to create others footer column.</p>
+    <p>Firstly, you  create a menu (for example: Company), then you set the Title and Select Menu that you want to display on your site's footer.</p>
+    <p><img src="includes/imgs/footerset7.png" alt="" width="900" /></p>
+    <p><img src="includes/imgs/footerset8.png" width="300" height="311" /></p>
+    <p>Do not forget <strong>Save</strong> button to save all the settings.</p>
+<p><strong id="woocommerce">6. Woocommerce Setting</strong></p>
+<p>Go to <strong>Dashboard &gt;Theme options</strong></p>
+<p>- It will take you to the Theme Options Setting, go to <strong>Woocommerce</strong>, you can configure some attributes as you want on your shop page such as:
+<div>
+<div>
+Number of days to treat as new product, Shop Sidebar Area, Shop page Sidebar, amount of products display per page........then you click on Save button to save your setting.</p>
+<p>You can see our demo Woocommerce setting:</p>
+<p><img src="includes/imgs/Wooset1.png" width="886" height="577" /></p>
+<p>&nbsp;</p>
+<p><strong id="verticalmenu">7. Vertical menu</strong></p>
+<p>Refer to the section &quot; <strong>3. Creating Advance Top Menu</strong>&quot; on this document to create vertical menu. Note that your have to set location for this menu as <strong>Vertical menu</strong> by scrolling down to the section &quot;<strong>Menu Setting</strong>&quot;. </p>
+<p>Let's see our demo Vertical menu structure:.</p>
+<p><img src="includes/imgs/vertical1.png" /></p>
+<p><strong> Setting Vertical menu Style: </strong></p>
+<p> If you do not want the Vertical menu show on your site: you just need go to <strong>Dashboard=&gt; Theme Option=&gt; Header</strong>, scrolling down to the Vertical menu section, you can click on the arrow down on the right site of tab <strong>[1]</strong> and select Disable, after saving your setting, the vertical menu will be disappear.</p>
+<p>You can see the image below:</p>
+<p><img src="includes/imgs/ver1.png" width="900" height="368" /></p>
+<p>We give you another choice:</p>
+<p>If you still want to use the Vertical menu but you do not want it always open, it only open when you click on, you may select Enable for user Vertical menu and Enable tab Collapse <strong>[2]</strong></p>
+<p>You can also set the number of visible Vertical menu items show on your page <strong>[3]</strong></p>
+<p>Do not foget saving your setting.</p>
+<p id="topbarmenu"><strong>8. Top Bar Menu Left and Right.</strong></p>
+<p>If you want to configure like our demo:</p>
+<p><img src="includes/imgs/Topbar.png" width="900" height="110" /></p>
+<p>You just go to <strong>Appearance=&gt; Menu</strong>=&gt; Create a new menu, for example: Top bar menu right and set the Location for menu as Top bar menu right:</p>
+<p><img src="includes/imgs/Topbar1.png" width="900" height="427" /></p>
+<p>You do the similar step to create the menu on Topbar Menu Left location.</p>
+<p>We want to tell you about the icon in Top bar Left menu, you just can add html on this menu, in our demo we use the awesome font, if you want to find more icon, you can follow the link: https://fortawesome.github.io/Font-Awesome/, click on the Icon and find the icon you want.</p>
+<p>Lets see our Top bar Left Menu structure:</p>
+<p><img src="includes/imgs/Topbarleft.png" width="900" height="521" /></p>
+<p>Once again you can see the location of the menus:</p>
+<p><img src="includes/imgs/Topbar2.png" width="695" height="427" /></p>
+<p id="themecolor"><strong>9.</strong> <strong>Setting the color of Theme</strong></p>
+<p>If you want to configure the color for your theme, you just need go to <strong>Dashboard/ Theme option/ Color</strong>: In General Tab, you can set the general main color, back ground color and price color by click on the select color box and choose the color you want. Remember to save your setting.</p>
+<p>You can see the image below:</p>
+<p><img src="includes/imgs/Color1.png" width="900" height="264" /></p>
+<p>If you want to setting some color for item of Vertical menu, you can forward to Vertical Menu as this image:</p>
+<p><img src="includes/imgs/Color2.png" width="900" height="376" /></p>
+<p>In this Tab, you can set the Back ground color, Text color, Menu item hover back ground color and Text hover color suitable with your site.</p>
+<p>We give you many choices to configure the color of all Header from Header 1 to Header 13, you can forward to the Header you want to setup then configure all the attributes for your Header:</p>
+<p><img src="includes/imgs/Color3.png" width="900" height="532" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id="shortcodes">KUTE SHORTCODES</h2>
+    <p>We have used both default shortcodes and our Kute shortcodes to build our Kutetheme. </p>
+    <p id="service"><strong>1. Service</strong></p>
+    <p>This shortcode will help you to display all your services on your site and your commitment about your service, it will make the customer has a good overview about your shop such as safe, good support and a large system all over the world......</p>
+    <p>To set this shortcode, first you need to go to<strong> Dashboard=&gt; Service=&gt; Add new </strong>and complete all needed information such as name of service, subtitle, short description, featured image......to create all your service (post type service) item.</p>
+<p>Notice that, you can setting the service oder by name, date, author, rand.....it depends on your meant, and about Display Style: we have 2 style then you will choose the style as you want to display in your homepage.</p>
+<p>If you choose the Style 1:</p>
+<p><img src="includes/imgs/shortcode1.png" alt="" width="576" height="580" /></p>
+<p> It will show on your frontend as:</p>
+<p><img src="includes/imgs/shortcode2.png" alt="" width="900" /></p>
+<p>And here is the frontend when you choose style 2 on the Display Style:</p>
+<p><img src="includes/imgs/shortcode3.png" /></p>
+<p>And Style 3 of Service:</p>
+<p><img src="includes/imgs/Service3.png" width="900" height="81" /></p>
+    <p id="tabproduct"><strong>2. Tab Products</strong></p>
+<p>Using this shortcode, you can display all types of products on your site according 3 criterias: Best sellers, On sales, New Products.</p>
+<p>Best Seller: If you want to display the  product here, your site has to some best selling products, that meant, if there  is no best selling product, this section will be empty.<br />
+  Onsale: if your products have disccount  product, it will be shown on Onsale section.<br />
+  New Product: when your site have the new  product, it will be display on New Product section</p>
+<p>You can see our demo:</p>
+<p><img src="includes/imgs/shortcode4.png" width="890" height="481" /></p>
+<p>Notice that, you need to setting some attribute for this shortcode:</p>
+<p><strong>Firstly</strong>, <strong>in General setting</strong>: You can select some categories  that you want to show on your Tab. If  you do no select specific Category, it will  be show all your products of all Category that covering 3 criterias above.</p>
+In Tab prduct setting, you can select the amount  of product will show on page and some others attribute, you can see the image  below
+<p><img src="includes/imgs/T1.png" width="651" height="508" /></p>
+<p><strong>Secondly, setting Carousel:</strong></p>
+<p><img src="includes/imgs/shortcode6.png" /></p>
+<p>You should care about some attributes:</p>
+<p><strong>[1]</strong>: AutoPlay: your product on Products tab will be auto display, you do not have to click to Next button to see others product.</p>
+<p><strong>[2]</strong> Navigation: you can use the &quot;Next&quot; or &quot;Prev&quot; button to see the product in the Products Tab. If you choose &quot;don't use Navigation&quot; it will not display the &quot;Next&quot; or &quot;Prev&quot; button any more.</p>
+<p><strong>[3]</strong> Loop: Duplicate last and first items to get loop illusion.</p>
+<p><strong>[4]</strong> Setting slide speed in millisecond.</p>
+<p><strong>[5] </strong>Margin: setting distance between 2 items.</p>
+<p>Click <strong>Save</strong> button <strong>[4]</strong> to save the setting.</p>
+<p><strong>Thirdly</strong>, you can setting<strong> Carousel responsive</strong>: you can select the items you want to show on some devices such as desktop, tablet and mobile.</p>
+<p><img src="includes/imgs/shortcode7.png" width="594" height="551" /></p>
+<p>You can also select Style 2 for your tab, if you choose this style, it will display on your site as:</p>
+<p><img src="includes/imgs/Tabproducts2.png" width="900" height="393" /></p>
+<p>and here is Style 3:</p>
+<p><img src="includes/imgs/Tabproducts3.png" width="892" height="425" /></p>
+<p>&nbsp;</p>
+<p id="latestdeal"><strong>3. Latest Deals</strong>: display the products that have the Sale Price Dates, it will show the detail time of the product on sales one by one.You need to set the Title, select the Style, choose category will be displayed, Number of product will be shown, and the Oder by. You can also setting Carousel if you want.</p>
+<p>Then click <strong>Save</strong> button to save your setting.</p>
+<p><img src="includes/imgs/shortcode8.png" width="900" height="631" /></p>
+<p>After you save the setting, it will show in your frontend as <strong>Style 1:</strong></p>
+<p><img src="includes/imgs/shortcode9.png" width="309" height="498" /></p>
+<p>or <strong>Style 2:</strong></p>
+<p><img src="includes/imgs/Latestdeal2.png" width="268" height="546" /></p>
+<p id="latestproductcarousel"><strong>4.  Latest Products Carousel</strong>: it will help you to display list of products on sales, you should care about some attributes in General setting such as the Title, select category that you want to display, number of product......and you should care about  Carousel setting &amp; Carousel responsive suitable with your site.</p>
+<p><img src="includes/imgs/shortcode10.png" width="584" height="592" /></p>
+<p>The   Latest Products Carousel will be displayed:</p>
+<p><img src="includes/imgs/shortcode11.png" /></p>
+<p id="popularcategory"><strong>5.  Popular Category</strong>: display the category that you choose. Notice that you select the category one by one. You need to set the Title, Type, select the category will be displayed, number child category....... to show on your page.</p>
+<p>Click on <strong>Save</strong> button to save your setting.</p>
+<p><img src="includes/imgs/Pop2.png" width="634" height="711" /></p>
+<p>You can see our demo Popular category in <strong>style 1</strong>:</p>
+<p><img src="includes/imgs/shortcode13.png" width="900" height="234" /></p>
+<p><strong>And Style 2:</strong></p>
+<p><img src="includes/imgs/popular2.png" width="900" height="241" /></p>
+    <p id="categoriestab"><strong>6. Categories Tab</strong>: display the category that you choose such as Fashion, Sports, Electronics, Digitals............consist of the product will show on your page.</p>
+    <p>You can see a Category of our demo: </p>
+    <p><img src="includes/imgs/shortcode14.png" width="900" height="388" /></p>
+<p>To setting like our demo, you need to care about the <strong>Categories Tab Setting</strong> <strong>[F1]</strong> and the <strong>Section Tab [F2]</strong></p>
+<p>About the<strong> Categories Tab</strong> setting, you have to set all the attributes following the image below:</p>
+<p><img src="includes/imgs/shortcode15.png" width="582" height="1306" /></p>
+<p>Especially, you need to care about the Tabs Type because we use many types of tab when setting our demo, you can use the tab type suitable with your site.</p>
+<p><strong>How about the Section tab Setting [F2]?</strong></p>
+<p> You need setting the header, choose the Section Type (it can be Best Sellers, Most Reviews, New Arrivals, Custom (displayed Specials), Category (choose category you want to show)......) then click <strong>Save Change</strong> button to save your setting.</p>
+<p><img src="includes/imgs/Shortcode16.1.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><strong>Tab 1:</strong></p>
+<p><img src="includes/imgs/shortcode16.png" width="900" height="381" /></p>
+<p><strong>Tab 2: </strong></p>
+<p><img src="includes/imgs/shortcode17.png" width="900" height="476" /></p>
+<p><strong>Tab 3:</strong></p>
+<p><img src="includes/imgs/Shortcode18.png" width="900" height="493" /></p>
+<p><strong>Tab 4:</strong></p>
+<p><img src="includes/imgs/Shortcode19.png" width="900" height="480" /></p>
+<p><strong>Tab 5: </strong></p>
+<p><img src="includes/imgs/Shortcode20.png" width="900" height="486" /></p>
+<p>Tab 6:</p>
+<p><img src="includes/imgs/Tab6.png" width="900" height="579" /></p>
+<p>Tab 7:</p>
+<p><img src="includes/imgs/Tab7.png" width="872" height="663" /></p>
+<p>&nbsp;</p>
+<p id="categories"><strong>7. Categories</strong>: display all the category that you choose without the products. The image below is shown the needed information to setting this shortcode.</p>
+<p><img src="includes/imgs/shortcode21.png" width="600" height="588" /></p>
+<p>And our demo:</p>
+<p><img src="includes/imgs/shortcode22.png" width="900" height="397" /></p>
+    <p id="listproduct"><strong>8. List Products:</strong> you can choose the number product of a category that you want to show and it is usually necessary to create the sub item for the Vertical Menu as our demo:</p>
+    <p><img src="includes/imgs/shortcode23.png" width="900" height="266" /></p>
+    <p>To setting this shortcode, you just need create a Title<strong> [H1]</strong>, Choose category<strong> [H2]</strong> you want to display by click the arrow down on the right side of this part, Select number product <strong>[H3]</strong> and the type of animation that you want to view <strong>[H4]</strong>.</p>
+    <p>Click <strong>Save</strong> button to save all the setting.</p>
+    <p><img src="includes/imgs/shortcode24.png" width="615" height="592" /></p>
+    <p>&nbsp;</p>
+    <p id="mailchimp"><strong>9. Mailchimp</strong></p>
+    <p>This is a very useful shortcode, MailChimp helps you to email the right people at the right time. You can send automated emails based on customer behavior and preferences, it will help the customer to receive all the information from your online shop such as: sales, new products.....</p>
+    <p><img src="includes/imgs/shortcode25.png" width="328" height="108" /></p>
+    <p>You need go to<strong> Dashboard=&gt; Settings=&gt; Mailchimp setting</strong> and enter your mailChimp API key <strong>[1]</strong> to enable a newsletter signup option with the registration form. After that it will show the email list<strong> [2]</strong>. You can see more about the Mailchimp according the link: <a    href="http://mailchimp.com/"> mailchimp</a></p>
+    <p><img src="includes/imgs/shortcode26.png" width="900" height="475" /></p>
+    <p>And you may also configure some attributes for this shortcode to make it looks like our  Demo 14.<br />
+    <em><strong>Step 1</strong></em>: Add the Mailchimp shortcode to your page structure:</p>
+<p><img src="includes/imgs/Mailchimp1.png" width="900" height="381" /></p>
+    <p><strong><em>Step 2:</em></strong> After added successfully, you will see Mail chimp  setting and configure this shortcode as the image below:</p>
+    <p><img src="includes/imgs/Mailchimp2.png" width="626" height="666" /></p>
+    <p>You can also set the success message and other attributes by  scrolling down to the end of Mailchimp setting.<br />
+    <em><strong>Step 3</strong></em>: Add the background for this section:</p>
+    <p><img src="includes/imgs/Mailchimp3.png" width="747" height="207" /></p>
+    <p><strong><em>How to add it?</em></strong><br />
+    In Home page structure, click on the edit icon of the row  that consist of Mailchimp shortcode, select Design option then configure the  Background as this image:</p>
+    <p><img src="includes/imgs/Mailchimp4.png" width="623" height="387" /></p>
+    <p>After saving your setting, it will show on your page as our demo:</p>
+    <p><img src="includes/imgs/Mailchimp5.png" width="900" height="160" /></p>
+<p id="brand"><strong>10. Brands</strong></p>
+    <p>This shortcode will helps you to display  a name, design, symbol or other feature of all the brand on your online shop. You can see our demo:</p>
+    <p><img src="includes/imgs/shortcode27.png" width="900" height="410" /></p>
+    <p>To setting like this,First, you need to go <strong>Dashboard=&gt; Products=&gt; Brands</strong> to create all the information of all the brand: name,description, thumbnail.....</p>
+    <p><img src="includes/imgs/shortcode28.png" width="382" height="792" /></p>
+    <p>Then you just need to care about the title<strong> </strong>and the Show product: click Yes to show the product. Beside that, if you do not want to show the product brand, you can select No.</p>
+    <p><img src="includes/imgs/shortcode29.png" width="653" height="709" /></p>
+    <p>Beside that, If you click on the arrow down on the right side of the Line box, you will see 4 style of Brand, you can select the style suitable with your site.</p>
+    <p><strong>When you select 1 line:</strong></p>
+    <p><img src="includes/imgs/Brand1line.png" width="900" height="92" /></p>
+    <p><strong>and 2 line:</strong></p>
+    <p><img src="includes/imgs/Brand2line.png" width="900" height="169" /></p>
+    <p><strong>Show logo Style 1:</strong></p>
+    <p><img src="includes/imgs/Brands1.png" width="900" height="92" /></p>
+    <p><strong>And here is style 2 show logo:</strong></p>
+    <p><img src="includes/imgs/Brands2.png" width="900" height="111" /></p>
+    <p>&nbsp;</p>
+    <p id="blog"><strong>11. Blogs</strong>: display all of your blog post on your site.</p>
+    <p>To setting your blogs on your site looks like our demo, you can following these steps:</p>
+<p>Step 1: Go to<strong> Dashboard=&gt;Post=&gt;Add new</strong> to create your post: title, content, select categories and set the featured image.</p>
+    <p>Step 2: Blogs settings_ you need to complete the information follow this form:</p>
+    <p><img src="includes/imgs/Blognew.png" width="643" height="718" /></p>
+    <p>You can also setting Carousel if you want. Click <strong>Save</strong> button to save the setting.</p>
+    <p>Notice that, you will have 5 Blog style:</p>
+    <p><strong>Style 1:</strong></p>
+    <p><img src="includes/imgs/shortcode30.png" width="900" height="345" /></p>
+    <p><strong>Style 2:</strong></p>
+    <p><img src="includes/imgs/Blog2.png" width="900" height="395" /></p>
+    <p><strong>Style 3:</strong></p>
+    <p><img src="includes/imgs/Blog3.png" width="900" height="339" /></p>
+    <p><strong>Style 4:</strong></p>
+    <p><img src="includes/imgs/Blog4.png" width="900" height="287" /></p>
+    <p><strong>Style 5:</strong></p>
+    <p><img src="includes/imgs/Blog5.png" width="900" height="489" /></p>
+    <p>As you can see on our demo, you need to use some widgets to setting the Blog post page (make sure that you have been created a Blog page, if not, you can go to <strong>Dashboard=&gt; Pages=&gt; Add new page</strong> to create one), you just need to add some widgets to Widget Area<strong> [1]</strong></p>
+<p>From the image below, you will see some widgets that we use to set this page consist of Wordpress widget and Kutetheme widgets.</p>
+    <p><img src="includes/imgs/shortcode32.png" width="294" height="410" /></p>
+    <p><strong>[2]</strong>: <strong>Categories</strong></p>
+    <p><strong>[3]: Wordpress Popular Post</strong>.</p>
+    <p><strong> [4], [7]: KT image</strong>: you just need to select image and set the link for each image display</p>
+<p><strong>[5]: Recent Comments: </strong> you set the title and the number of comments that you want to show on your Blog page.</p>
+    <p><strong> [6] :Woocommerce Product Tags</strong></p>
+    <p>After all setting, you can see our demo:</p>
+    <p><img src="includes/imgs/shortcode34.png" width="271" height="2127" /></p>
+    <p id="kutefeaturedproduct"><strong>12. Kute Featured Product:</strong> Show the feature products of your online shop.</p>
+    <p>You can see our demo:</p>
+    <p><img src="includes/imgs/shortcode35.png" width="894" height="527" /></p>
+    <p>To configure this shortcode, you should care about some attributes like the image below:</p>
+    <p><img src="includes/imgs/shortcode36.png" width="621" height="506" /></p>
+    <p><strong>[1]</strong>: Enter the title of box</p>
+    <p><strong>[2]</strong>: Select the type of box by clicking on the arrow down on the right side of Box Type, it can be Featured or By IDs</p>
+    <p><strong>[3]</strong>: Fill in the number of products put out from your store.</p>
+    <p><strong>[4]</strong>: Click to<strong> Save</strong> button to save your setting.</p>
+    <p>Notice that you need to choose<strong> &quot;what is your featured product?&quot;</strong></p>
+    <p>You can go to<strong> Dashboard=&gt; Products=&gt; Product</strong>s: on the top of Product list you may see a<strong> Blue Star</strong> icon, if you want to select any product as feature product, you just need click on the Star icon of that product like this screenshot:</p>
+    <p><img src="includes/imgs/shortcode37.png" width="814" height="357" /></p>
+    <p id="hotdealstab"><strong>13. Hot Deals Tab</strong>: Show tab Hot deals.</p>
+    <p>If you want your Hot Deasl tab looks like our demo:</p>
+    <p><img src="includes/imgs/Shortcode40.png" width="885" height="301" /></p>
+    <p>You should care about 2 main settings:</p>
+    <p>Firstly, <strong>Hot deals tab</strong> setting:</p>
+    <p><img src="includes/imgs/shortcode38.png" width="631" height="508" /></p>
+    <p>Secondly, <strong>Section tab</strong> setting:</p>
+    <p><img src="includes/imgs/shortcode39.png" width="631" height="448" /></p>
+    <p>You need to complete all the needed information as the image above then remember clicking on <strong>Save change</strong> buton.</p>
+    <p id="boxproduct"><strong>14. Box Product</strong>:  show list product in box New Arrival, Top Seller in, Special Product......</p>
+    <p>Here is some needed information you may configure if you want to create this shortcode:</p>
+    <p><img src="includes/imgs/shortcode43.png" width="627" height="848" /></p>
+    <p><strong>[1]</strong>: Enter the Title of Box</p>
+    <p><strong>[2]</strong>: You can choose the Type of product will be shown on box by click on the arrow down on the rightside of Type section, it can be: New Arrival, Most Review....</p>
+    <p><strong>[3]:</strong> Select the Style of Box Product that you want to show on your Homepage by click on the arrow down on the rightside of Box Style tab.</p>
+    <p><strong>[4]</strong>: Select some categories display on Box Product.</p>
+    <p><strong>[5</strong>]: Enter the number of product will be show.</p>
+    <p><strong>[6]</strong>: Setting the main color of Tab.</p>
+    <p><strong>[7]</strong>: Upload the banner for the Box</p>
+    <p><strong>[8]</strong>: Click <strong>Save </strong>button to sane your setting.    </p>
+    <p>You can see 4 box types of our theme:</p>
+    <p><strong>Style 1:</strong></p>
+    <p><img src="includes/imgs/shortcode41.png" width="900" height="331" /></p>
+    <p><strong>Style 2:</strong></p>
+    <p><img src="includes/imgs/shortcode42.png" width="900" height="327" /></p>
+    <p><strong>Style 3:</strong></p>
+    <p><img src="includes/imgs/Boxproducts3.png" width="886" height="424" /></p>
+    <p><strong>Style 4:</strong></p>
+    <p><img src="includes/imgs/Boxproducts4.png" width="900" height="370" /></p>
+    <p id="hotdeals"><strong>15. Hot Deals</strong>: show box Hot Deals</p>
+    <p>To configure your box looks like our demo:</p>
+    <p><img src="includes/imgs/shortcode45.png" width="900" height="261" /></p>
+    <p>You may complete the needed information as this image:</p>
+    <p><img src="includes/imgs/shortcode44.png" width="657" height="725" /></p>
+    <p id="ktlookbook"><strong>16. KT Look Books:</strong> show all the products that the customer used.</p>
+    <p>Lets see our demo:</p>
+    <p><img src="includes/imgs/Lookbook.png" width="900" height="448" /></p>
+    <p>If you want to configure your site looks like our demo, first you need go to Dashboard/ Look Books/ Addnew and complete all the needed information: name, Featured image and the Location that the customers live, you can look at the image below:</p>
+    <p><img src="includes/imgs/Lookbook2.png" width="900" height="362" /></p>
+    <p>After you created all your Look Books, you can drag the KT Look Books short code to your Home page and setting it:</p>
+    <p><img src="includes/imgs/Lookbook1.png" width="900" height="478" /></p>
+    <p>From the box above:</p>
+    <p><strong>[1]</strong>: enter the title of Look Books.</p>
+    <p><strong>[2]</strong>: set the number of Look Book to display on this Tab.</p>
+    <p><strong>[3]</strong>: Select the color of overlay as you want.</p>
+    <p><strong>[4]</strong>: Configure the opacity of the overlay from 0.1 to 1 (in our demo, we set 0.7).</p>
+    <p><strong>[5]</strong>: Enter the custom link for submit photo, it may be your email page or the contact page, after setting whenever you click on the &quot;Submit your photo&quot; on Look Books section, it will lead you directly to the link form that you already set before.</p>
+    <p>You can also setting the number of Look Books will be show per slide by go to Carousel responsive tab and set the quanlity for specific device.</p>
+    <p>Beside that you can configure the background of Look Books section: In edit page, click on the Edit icon of the Look Books short code Row as this image:</p>
+    <p><img src="includes/imgs/Lookbook3.png" width="900" height="476" /></p>
+    <p>You can upload the image and add parallax type background for row, Notice that if no image is specified, parallax will use background image from Design Options. You may click on the arrow down on the right side of Parallax box to select the type you want.</p>
+    <p>If you would like to use the video background, you can tick <strong>Yes </strong>on the checkbox &quot;use video background&quot; , after saving and update your setting, it will show on your site.</p>
+    <p id="ktcollection"><strong>17. KT Collection</strong>: display the Collection on your online shop.</p>
+    <p>To configure this short code, you can follow these instruction below:</p>
+    <p><strong>Step 1:</strong> Go to <strong>Dashboard/ Collection/ Categories</strong> and create your Collection categories.</p>
+    <p><strong>Step 2</strong>:<strong> Dashboard/ Collection/ Add new</strong> and fill in the information about the Name, Content, Designer and Featured image. Remember to save your setting.</p>
+    <p><img src="includes/imgs/Collection2.png" width="900" height="434" /></p>
+    <p><strong>Step 3:</strong> Go to Home Page, drag the KT Collection short code to your page and setting this short code:</p>
+    <p><img src="includes/imgs/Collection3.png" width="900" height="422" /></p>
+    <p>You need to fill in the name of this section and default display style is style 1.You can also choose the categories will be show on your site, if you do not choose the specific category, it will show all the categories that you created.</p>
+    <p>About the number box, you may set the number of collection put out from your site on that box.</p>
+    <p>If you want to set quanlity of collection per slide, you can go to  Carousel responsive tab and set the quanlity for specific device.</p>
+    <p>After complete your setting, it will display on your front-end as:</p>
+    <p><img src="includes/imgs/Collection.png" width="886" height="651" /></p>
+    <p id="kttestimonials"><strong>18. KT Testimonials</strong>:</p>
+    <p>Configure this short code will help you to display your site's Testimonial like our demo:</p>
+    <p><img src="includes/imgs/Testimonial.png" width="900" height="343" /></p>
+    <p><strong><em>Firstly,</em></strong> you go to <strong>Dashboard/ Testimonial/ Add new</strong>, complete all the needed informations as the image below:</p>
+    <p><img src="includes/imgs/Testimonial1.png" width="900" height="391" /></p>
+    <p><strong><em>Secondly</em></strong>, you need to drag the short code KT Testimonials to your Home page structure and cofigure it.</p>
+    <p><img src="includes/imgs/Testimonial2.png" width="900" /></p>
+    <p>From the form above:</p>
+    <p><strong>[1]:</strong> Fill in the name of this section as you want.</p>
+    <p><strong>[2]:</strong> Select Style of Testimonial box: Style 1 and Style 2.</p>
+    <p><strong>[3]: </strong>Default number of Testimonial per page is &quot;four&quot;.</p>
+    <p><strong>[4]: </strong>Select the color for overlay.</p>
+    <p><strong>[5]: </strong>Set the overlay opacity, we select 0.7 for our demo.</p>
+    <p>Do not forget saving all the settings.</p>
+    <p>In addition you can configure the background of Testimonials section: In edit page, you may click on the Edit icon of the KT Testimonials short code Row as this image:</p>
+    <p><img src="includes/imgs/Testimonial3.png" width="806" height="603" /></p>
+    <p>You can upload the image and add parallax type background for row, Notice that if no image is specified, parallax will use background image from Design Options. You may click on the arrow down on the right side of Parallax box to select the type you want.</p>
+    <p>If you would like to use the video background, you can tick <strong>Yes </strong>on the checkbox &quot;use video background&quot; , after saving and update your setting, it will display on your site as the our demo.</p>
+    <p>Here is the result when you select Style 2 for your Testimonial:</p>
+    <p><img src="includes/imgs/Testimonial28.png" width="272" height="311" /></p>
+    <p>&nbsp;</p>
+<p id="ktbannertext"><strong>19. KT Banner Text</strong>: display a banner Text</p>
+    <p>Lets see our demo:</p>
+    <p><img src="includes/imgs/Bannertext.png" width="900" height="244" /></p>
+    <p>Setting this short code very simple, you just need go to your Homepage buiding (Add new page or Edit page using Visual Composer), add the KT Banner Text short code and setting as this image:</p>
+    <p><img src="includes/imgs/Bannertext1.png" width="900" height="382" /></p>
+    <p>Please remember to save your setting.</p>
+    <p id="ktbanner"><strong>20. KT Banner:</strong> display a banner.</p>
+    <p>You may look at the image below to know about this short code:</p>
+    <p><img src="includes/imgs/Banner1.png" width="900" height="454" /></p>
+    <p>Setting this shortcode, you can go to Page/ All Pages/ Home page Edit, click on edit icon of KT Banner, you will see KT Banner setting then you can configure it.</p>
+    <p>You will have 3 KT Banner styles:</p>
+    <p><strong><em>Style 1:</em></strong></p>
+    <p><img src="includes/imgs/Banner2.png" width="653" height="711" /></p>
+    <p>From the image above:</p>
+    <p><strong>[1]:</strong> Select Style you want (Style 1)</p>
+    <p><strong>[2]:</strong> Upload the image of Banner.</p>
+    <p><strong>[3]</strong>: Fill in the custom link of the Banner.</p>
+    <p><strong>[4]:</strong> You can Enable or Disable the CountDown as you want by clicking on the arrow on the right side of this box.</p>
+    <p><strong>[5]</strong>: Enter the Countdown text such as Hot Deal....</p>
+    <p><strong>[6]</strong>: Fill in the Time you want to show on your Banner.</p>
+    <p>After saving your setting, it will be displayed on your site as:</p>
+    <p><img src="includes/imgs/Banner3.png" width="585" height="585" /></p>
+    <p><strong><em>Style 2:</em></strong></p>
+    <p>If you select Style 2, you will see the form as this image:</p>
+    <p><img src="includes/imgs/Banner4.png" width="634" height="718" /></p>
+    <p>You need to complete all the needed information as the form above, notice that you will have 3 choices with the Background: Show, Hide, Show text and background.</p>
+    <p>Here is result when you select Show Background:</p>
+    <p><img src="includes/imgs/Banner5.png" width="287" height="288" /></p>
+    <p>And when you select Hide Background, it will show on your site like this banner:</p>
+    <p><img src="includes/imgs/Banner6.png" width="297" height="290" /></p>
+    <p>If you choose show both Text and Background, your banner will be displayed as:</p>
+    <p><img src="includes/imgs/Banner7.png" width="584" height="569" /></p>
+    <p><strong><em>Style 3: </em></strong></p>
+    <p>When you select Style 3 for your banner, you will see the setting like this image:</p>
+    <p><img src="includes/imgs/Banner8.png" width="648" height="714" /></p>
+    <p>You can see that, in this Style, you may fill in the ID of Product you want to show on your banner, it will help you to show your favourite or your Featured Product on your Home Page.</p>
+    <p><img src="includes/imgs/Banner9.png" width="578" height="289" /></p>
+    <p id="categoriescarousel"><strong>21. Categories Carousel</strong>: Show the Category you select to display on your site.    </p>
+    <p>In your Homepage Edit, when you click on Edit icon of Categories Carousel short code, you will see all the setting of this short code and you can configure it as you want.</p>
+    <p><img src="includes/imgs/Carousel3.png" width="649" height="710" /></p>
+    <p>You should complete all the needed information as the image above such as the Title, select Category, upload background image....</p>
+    <p>Notice that, if you do not enter the Title and Sub Title, it will not show on Categories Carousel box as this image:</p>
+    <p><img src="includes/imgs/Carousel1.png" width="900" height="247" /></p>
+    <p>And when you have a Title, sub Title, your Categories Carousel box will display as:</p>
+    <p><img src="includes/imgs/Carousel2.png" width="900" height="335" /></p>
+    <p id="productsidebar"><strong>22. Product Sidebar</strong>: Show product Best seller, Onsales, New Product on Sidebar of Demo 12.</p>
+    <p><img src="includes/imgs/Newproduct1.png" width="282" height="692" /></p>
+    <p>Setting this shortcode, you need to care about some attributes as the image below:</p>
+    <p><img src="includes/imgs/Productsidebar.png" width="642" height="722" /></p>
+    <p>From the form above:</p>
+    <p><strong>[1]: </strong>Fill in the Title of Tab.</p>
+    <p><strong>[2]:</strong> Choose the criteria of product, it can be new product, best seller, most review..............</p>
+    <p><strong>[3]:</strong> Select category will be displayed on your Product sidebar.</p>
+    <p><strong>[4]:</strong> The amount of product has been taken.</p>
+    <p><strong>[5]:</strong> Fill in the number of Product to show on the page.</p>
+    <p>Do not forget saving your setting.</p>
+    <p id="KTsingleproduct"><strong>23. KT Single Product</strong></p>
+    <p>You can see our demo:</p>
+    <p><img src="includes/imgs/KTsingleproduct1.png" width="900" height="419" /></p>
+    <p><strong><em>How to configure this shortcode?</em></strong></p>
+    <p><strong><em>Step 1:</em></strong> Go to your Homepage structure and add KT Single Product shortcode to your page then configure it:</p>
+    <p><img src="includes/imgs/KTsingle2.png" width="633" height="595" /></p>
+    <p><strong><em>Step 2:</em></strong> Add the background: In Home page structure, click on the edit icon of the row that consist of KT Single Product shortcode, select Design option then configure the Background as this image:</p>
+    <p><img src="includes/imgs/KTsingle.png" width="815" height="500" /></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><strong id="kutewidgets">KUTE WIDGETS</strong></p>
+    <p><strong>1. KT Image</strong></p>
+    <p>Select or capture the image you want to show then set the link for the image, you will have KT image display on the single area of your shop.</p>
+    <p>You can see these widget display on our demo:</p>
+    <p><img src="includes/imgs/widget1.png" width="287" height="319" /></p>
+    <p><strong>2. KT Slider</strong>: using this widgets will help you show the image on your Shop area, 
+      <label for="widget-widget_kt_slider-1-autoplay">you can setting for this widget such as you can choose <strong>Auto next slide </strong>(the next slide will run auto</label>
+      ), or 
+      <label for="widget-widget_kt_slider-1-loop"> <strong>Loop</strong> (duplicate last and first items to get loop illusion)</label>
+    .</p>
+<p>One simple manipulation to set this widget that you select the image you want to show and choose the link for each image.</p>
+    <p>Click<strong> Save</strong> button to save the setting and it will show as:</p>
+    <p><img src="includes/imgs/widget2.png" width="297" height="379" /></p>
+    <p><strong>3. KT Special Produc</strong>t: you can show  Special products of your online shop and the customer can approach your products easier.</p>
+<p>Setting this part, you need complete the form as the image below:</p>
+<p><img src="includes/imgs/KT1.png" width="282" height="281" /></p>
+<p>It will display on your site:</p>
+<p><img src="includes/imgs/widget3.png" width="300" height="247" /></p>
+<p><strong>4. KT Testimonials</strong>_ Show information about Testimonials such as: name, experience.....</p>
+<p>Firstly, you go to <strong>Dashboards=&gt; Testimonials=&gt; Add new</strong> to create your testimonial's information.</p>
+    <p>After that, you can set the Title and the attribute for <strong>KT Testimonials</strong> like this image:</p>
+    <p><img src="includes/imgs/KT2.png" width="286" height="496" /></p>
+    <p>You can see the frontend:</p>
+    <p><img src="includes/imgs/widget4.png" width="296" height="339" /></p>
+    <p><strong>5. KT Best Seller</strong> _ display the  best seller product.</p>
+<p>You can set some attributes as the form below:</p>
+    <p><img src="includes/imgs/KT3.png" width="281" height="394" /></p>
+    <p>After setting, it will display on your page:</p>
+    <p><img src="includes/imgs/widget5.png" width="295" height="491" /></p>
+    <p><strong>6. KT On sale</strong>_ show products have sales price, you should care about some attribute like the Title, number of products will be show on your shop single area.</p>
+    <p><img src="includes/imgs/KT4.png" width="286" height="346" /></p>
+    <p>Let's see our demo:</p>
+    <p><img src="includes/imgs/widget6.png" width="296" height="497" /></p>
+    <p><strong>7. KT Trade mark</strong>: display all trade mark on your homepage.</p>
+    <p>You need to create the Title, select an Image to upload and choose the link that you want to display for all the items in this widget.</p>
+<p>Then, click <strong>Save</strong> button to save the setting and it will display on your frontend as:</p>
+    <p><img src="includes/imgs/widget7.png" width="900" height="72" /></p>
+<p><strong>8. KT SEO Keyword</strong>: display link and text for SEO.</p>
+<p>You just set the Title  of items and enter the link for each items will appear on your site.</p>
+<p>Then click on <strong>Save</strong> button to save all the settings</p>
+<p>You can create amout of &quot;<strong>KT SEO Keyword</strong>&quot; as you want. (in our demo, we used 3 <strong>&quot;KT SEO Keyword</strong>&quot;) </p>
+<p><img src="includes/imgs/widget8.png" width="900" height="88" /></p>
+<p><strong>9. KT Mailchimp &amp; KT Social</strong> </p>
+<p>The screenshot below will show the form you need to setting KT Mailchimp:</p>
+    <p><img src="includes/imgs/KT5.png" width="300" height="625" /></p>
+    <p>Configure setting for <strong>&quot;KT Social&quot;</strong> widget:</p>
+    <p>To create this Widget, first you can go to <strong>Dashboard=&gt; Theme options=&gt; Socials</strong> and choose some link to display on your homepage.</p>
+    <p><img src="includes/imgs/KT6.png" width="849" height="504" /></p>
+    <p>Then you can set the title for this item:</p>
+    <p><img src="includes/imgs/KT7.png" width="297" height="165" /></p>
+    <p>After save the setting, your frontend looks like the screenshot:</p>
+    <p><img src="includes/imgs/widget10.png" width="341" height="172" /></p>
+<p>&nbsp;</p>
+<p>==================================================================================================================</p>
+<p>Let's see some shortcodes that we applied on homepage style1; homepage style2; homepage style3. </p>
+<p><strong><em>1.  Homepage style1</em></strong></p>
+<p><img src="includes/imgs/01 Home 1.jpg" width="900" height="3550" /></p>
+    <p>For above form, some shortcodes are used:</p>
+    <ul>
+      <li><em><strong>[1]: Service</strong></em></li>
+      <li><em><strong>[2]: Tab Products</strong></em></li>
+      <li><em><strong>[3]: Lastest deals</strong></em></li>
+      <li><em><strong>[4],[5],[6],[7],[8],[9]: Categories Tab</strong></em></li>
+      <li><em><strong>[10]: </strong></em><em><strong>Single Image</strong></em></li>
+      <li><em><strong>[11]: Brands</strong></em></li>
+      <li><em><strong>[12]: Categories</strong></em></li>
+      <li><em><strong>[13]: Mailchimp</strong></em></li>
+    </ul>
+    <p><em><strong>2. Homepage syle 2</strong></em></p>
+    <p><img src="includes/imgs/Home 2.jpg" width="900" height="3086" /></p>
+<p>For above form, here are some shortcodes we used:</p>
+<ul>
+  <li><em><strong>[1]: Lastest deals products carousel</strong></em></li>
+  <li><em><strong>[2],[3],[4],[5],[6],[7]: Categories Tab</strong></em></li>
+  <li><em><strong>[8]: Single Image</strong></em></li>
+  <li><em><strong>[9]: Blogs</strong></em></li>
+  <li><em><strong>[10]: </strong></em><em><strong>Service</strong></em></li>
+  <li><em><strong>[11]: Mailchimp</strong></em>    </li>
+</ul>
+<p><em><strong>3. Homepage style 3</strong></em></p>
+<p><img src="includes/imgs/06_Home 6.jpg" width="900" height="4841" /></p>
+<p>For above form, we used some shortcodes:</p>
+<ul>
+  <li><em><strong>[1]: Popular category</strong></em></li>
+  <li><em><strong>[2]: Single Image</strong></em></li>
+  <li><em><strong>[3],</strong></em><em><strong>[4],[5],[6],[7],[8]</strong></em>: <em><strong>Categories Tab</strong></em></li>
+  <li><em><strong>[9] Brands</strong></em></li>
+  <li><em><strong>[10]: Blogs</strong></em></li>
+  <li><em><strong>[11]: Service</strong></em></li>
+  <li><em><strong>[12]: Mailchimp</strong></em></li>
+</ul>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h2 id="thanks">Thank you!</h2>
+    <p>Once again, thank you so much for purchasing this template.   If you have any questions relating to this template<em>, </em>you can  submit a ticket on our support system: <a href="http://support.ovicsoft.com/support-system">http://support.ovicsoft.com/support-system </a><a href="http://support.ovicsoft.com/forum">.</a> We'd be glad to help you.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+  </div>
+</div>
+<a class="gotop" href="#top">Go to Top</a>
+</body>
+</html>
